@@ -156,7 +156,7 @@ class Camera:
         headers, result = startRecord(self.access_key, self.secret_key, self.namespaceId, self.streamId)
         print("【启动设备按需录制】 " + str(json.loads(headers)['code']))
 
-        time.sleep(45)
+        time.sleep(60)
 
         # 停止设备按需录制
         headers, result = stopRecord(self.access_key, self.secret_key, self.namespaceId, self.streamId)
